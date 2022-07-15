@@ -1,3 +1,8 @@
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
