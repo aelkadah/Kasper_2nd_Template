@@ -538,4 +538,433 @@ header nav .find i::after {
 .stats .container .box p {
   font-size: 14px;
 }
-/* --------------------------- Stats end --------------------------- */ ;
+/* --------------------------- Stats end --------------------------- */
+
+/* --------------------------- Skills start --------------------------- */
+.testi-skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.testi-skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .testi-skills .container > div {
+    flex-basis: 45%;
+  }
+}
+.testi-skills .container > div > h3 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.testi-skills .container > div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.testi-skills .testimonials .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.testi-skills .testimonials .content img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  .testi-skills .testimonials .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testi-skills .testimonials .content img {
+    margin: 0 auto 20px;
+  }
+}
+.testi-skills .testimonials .text {
+  line-height: 1.8;
+  border-bottom: 1px solid #ccc;
+}
+.testi-skills .testimonials .text p {
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.testi-skills .testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.testi-skills .testimonials .bullets li {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.testi-skills .testimonials .bullets li.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.testi-skills .skills .prog-holder {
+  margin-bottom: 40px;
+}
+.testi-skills .skills .prog-holder h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.testi-skills .skills .prog-holder .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+.testi-skills .skills .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.testi-skills .skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+.testi-skills .skills .prog-holder .prog span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+  border-color: black transparent transparent;
+  right: -8px;
+  top: -15px;
+}
+/* --------------------------- Skills end --------------------------- */
+
+/* --------------------------- Quote start --------------------------- */
+.quote {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: black;
+  background-image: url(../imgs/quote.jpg);
+  background-size: cover;
+}
+.quote::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.quote .container {
+  position: relative;
+  max-width: 75%;
+}
+.quote q {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+/* --------------------------- Quote end --------------------------- */
+
+/* --------------------------- Pricing start --------------------------- */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .container .box {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .box .head {
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .box .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .box .head span {
+  font-size: 60px;
+  font-weight: bold;
+}
+.pricing .box .head span::before {
+  position: relative;
+  content: "$";
+  font-size: 25px;
+  font-weight: normal;
+  top: -40px;
+  margin-right: 15px;
+}
+.pricing .box .head span::after {
+  position: relative;
+  content: "/mo";
+  font-size: 20px;
+  font-weight: normal;
+  right: -15px;
+}
+.pricing .box ul li {
+  position: relative;
+  padding: 20px;
+}
+.pricing .box ul li:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  background-color: var(--main-color);
+  width: 140px;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pricing .box .foot {
+  border-top: 1px solid var(--main-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pricing .box .foot a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--main-color);
+  padding: 15px 20px;
+}
+.pricing .box .foot a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+/* --------------------------- Pricing end --------------------------- */
+
+/* --------------------------- Subscribe start --------------------------- */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../imgs/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+}
+.subscribe::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.subscribe .container {
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 991px) {
+  .subscribe .container {
+    flex-direction: column;
+  }
+}
+.subscribe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  color: white;
+}
+.subscribe form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+.subscribe form input[type="email"] {
+  border: 1px solid white;
+  border-right: none;
+  background: none;
+  padding: 20px 20px 20px 60px;
+  caret-color: var(--main-color);
+  width: calc(100% - 130px);
+}
+.subscribe form input[type="submit"] {
+  width: 130px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-left: none;
+  text-transform: uppercase;
+}
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus {
+  outline: none;
+}
+.subscribe form ::placeholder {
+  color: white;
+}
+.subscribe p {
+  line-height: 2;
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .subscribe p {
+    text-align: center;
+    margin: 30px 0 0;
+  }
+}
+/* --------------------------- Subscribe end --------------------------- */
+
+/* --------------------------- Contact start --------------------------- */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .contact .container {
+    flex-direction: column;
+  }
+}
+.contact .container form {
+  flex-basis: 70%;
+}
+.contact .container form .main-input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.contact .container form .main-input:focus {
+  outline: none;
+}
+.contact .container form textarea.main-input {
+  height: 200px;
+}
+.contact .container form input[type="submit"] {
+  display: flex;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: auto;
+  padding: 20px;
+  cursor: pointer;
+}
+.contact .container form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+.contact .container .info {
+  flex-basis: 25%;
+}
+@media (max-width: 767px) {
+  .contact .content .info {
+    order: -1;
+    text-align: center;
+  }
+}
+.contact .container .info h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.contact .container .info .phone {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+.contact .container .info h4:nth-of-type(2) {
+  margin-top: 90px;
+}
+@media (max-width: 767px) {
+  .contact .container .info h4:nth-of-type(2) {
+    margin-top: 30px;
+  }
+}
+.contact .container .info address {
+  color: #777;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .contact .container .info address {
+    margin-bottom: 40px;
+  }
+}
+/* --------------------------- Contact end --------------------------- */
+
+/* --------------------------- Footer start --------------------------- */
+footer {
+  position: relative;
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  color: white;
+  background-color: black;
+  background-image: url(../imgs/subscribe.jpg);
+  background-size: cover;
+  text-align: center;
+}
+footer::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+footer .container {
+  position: relative;
+}
+footer .container img {
+  margin-bottom: 20px;
+}
+footer .container h3 {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  font-weight: normal;
+  width: fit-content;
+  margin: 20px auto;
+}
+footer .container .social-icons i {
+  padding: 10px 15px;
+}
+footer .copyright {
+  margin-top: 60px;
+}
+footer .copyright span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+/* --------------------------- Footer end --------------------------- */ ;
